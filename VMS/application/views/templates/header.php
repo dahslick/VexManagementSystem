@@ -17,7 +17,7 @@
 		<div class="collapse navbar-collapse" id="navbarColor02">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="<?php echo base_url(); ?>home">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="<?php echo base_url(); ?>quickLook">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="<?php echo base_url(); ?>request">Request</a>
@@ -29,7 +29,7 @@
 					<a class="nav-link" href="<?php echo base_url(); ?>about">About</a>
 				</li>
 			</ul>
-			<button type="button" class="btn btn-danger float-right"> Logout</button>
+			<!--button type="button" class="btn btn-danger float-right"> Logout</button>-->
 		</div>
 	</nav>
 	<div class="container">
