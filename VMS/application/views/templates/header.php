@@ -10,7 +10,6 @@
 	 crossorigin="anonymous"></script>
 
 </head>
-
 <body>
 	<style>
 		.dropdown:hover>.dropdown-menu{
@@ -23,14 +22,18 @@
 		 aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-
 		<div class="collapse navbar-collapse" id="navbarColor02">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
 					<a class="nav-link text-success" href="<?php echo base_url(); ?>quickLook">QuickLook <span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link text-success" href="<?php echo base_url(); ?>requests">Request</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-success" id="navbarDropdown" role="button" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">Request</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>requestForm">New Request</a>
+						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>requests">Last Requested</a>
+					</div>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle text-success" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -47,4 +50,3 @@
 			<!--button type="button" class="btn btn-danger float-right"> Logout</button>-->
 		</div>
 	</nav>
-	<div class="container">

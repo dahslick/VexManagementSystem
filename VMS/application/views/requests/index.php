@@ -1,6 +1,7 @@
 
 
-<table class="table table-hover">
+<div class="table-responsive">
+    <table class="table table-sm table-hover table-responsive-lg">
   <thead>
     <tr>
       <th scope="col">Org Name</th>
@@ -20,17 +21,20 @@
     <?php foreach($requests as $request) : ?>
     <tr class="table-active">
     <th scope="row"><?php echo $request['OrgName']; ?></th>
-    <td><?php echo $request['OrgStreetAddr']; ?></td>
-    <td><?php echo $request['OrgCity']; ?></td>
-    <td><?php echo $request['OrgZip']; ?></td>
-    <td><?php echo $request['OrgPhone']; ?></td>
-    <td><?php echo $request['OrgAdminEmail']; ?></td>
-    <td><?php echo $request['ReqName']; ?></td>
-    <td><?php echo $request['ReqEmail']; ?></td>
-    <td><?php echo $request['ReqPhone']; ?></td>
-    <td><?php echo $request['ReqKits']; ?></td>
-    <td><?php echo $request['ReqDate']; ?></td>
+    <td class="small"><?php echo $request['OrgStreetAddr']; ?></td>
+    <td class="small"><?php echo $request['OrgCity']; ?></td>
+    <td class="small"><?php echo $request['OrgZip']; ?></td>
+    <td class="small"><?php echo $request['OrgPhone']; ?></td>
+    <td class="small"><?php echo $request['OrgAdminEmail']; ?></td>
+    <td class="small"><?php echo $request['ReqName']; ?></td>
+    <td class="small"><?php echo $request['ReqEmail']; ?></td>
+    <td class="small"><?php echo $request['ReqPhone']; ?></td>
+    <td class="small"><?php echo $request['ReqKits']; ?></td>
+    <td class="small"><?php echo $request['ReqDate']; ?></td>
     <?php endforeach; ?>
     </tr>
+</tbody>
+</table>
+</div>
 
 
