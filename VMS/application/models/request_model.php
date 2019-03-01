@@ -5,7 +5,8 @@
         }
 
         public function get_requests(){
-            $query = $this->db->get('requests');
+            $this->db->order_by('ReqDate');
+            $query = $this->db->query('SELECT * FROM requests WHERE CheckedOut IS NULL');
             return $query->result_array();
         }
 
@@ -22,7 +23,6 @@
                 'ReqPhone' => $this->input->post('ReqPhone'),
                 'ReqKits' => $this->input->post('ReqKits')
             );
-
             return $this->db->insert('requests',$data);
         }
     }

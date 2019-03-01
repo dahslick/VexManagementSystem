@@ -50,3 +50,4 @@
 			<!--button type="button" class="btn btn-danger float-right"> Logout</button>-->
 		</div>
 	</nav>
+<div class="container">

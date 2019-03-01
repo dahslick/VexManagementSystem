@@ -19,12 +19,8 @@
                 $this->load->view('requestForm/index', $data);
                 $this->load->view('templates/footer');
             } else{
-                $this->load->view('templates/header');
-                $this->load->view('requestForm/success', $data);
-                $this->load->view('templates/footer');
                 $this->request_model->create_request();
-                sleep(5);
-                flush();
+                
                 redirect('requestForm');
             }
 
