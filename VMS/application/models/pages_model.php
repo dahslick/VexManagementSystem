@@ -6,7 +6,7 @@
 
         public function countOpenRequests(){
             $query = $this->db->query('SELECT * FROM requests WHERE CheckedOut IS NULL');
-            return $query->num_rows();                // print_r($query->result());
+            return $query->num_rows(); 
             }
         
         public function countCheckedOut(){

@@ -45,8 +45,17 @@
 			<td class="small">
 				<?php $timestamp = strtotime($request['ReqDate']); echo date('m/d/y', $timestamp);?>
 			</td>
+			<td class='small'>
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<?php echo form_open('/requests/checkout/'.$request['id']); ?>
+					<input type="submit" value="checkout" class="btn btn-outline-success"></form>
+					<?php echo form_open('/requests/delete/'.$request['id']); ?>
+					<input type="submit" value="delete" class="btn btn-outline-danger"></form>
+				</div>
+			</td>
 			<?php endforeach; ?>
 		</tr>
+
 	</tbody>
 </table>
 </div>

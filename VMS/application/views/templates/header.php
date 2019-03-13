@@ -4,6 +4,7 @@
 	<title>Vms</title>
 	<link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
 	<link rel="stylesheet" href="./application/assets/css/headerFooter.css">
+	<script src="./application/assets/js/runing.js" </script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -37,12 +38,12 @@
 						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>checkedIn">Checked In</a>
 					</div>
 				</li>
-				<li class="nav-item dropdown">
+				<li class="nav-item dropdown disabled">
 					<a class="nav-link dropdown-toggle text-success" id="navbarDropdown" role="button" data-toggle="dropdown"
 					 aria-haspopup="true" aria-expanded="false">Parts</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>partsList">Parts list</a>
-						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>kitEditor">Kit editior</a>
+						<a class="dropdown-item text-success disabled" href="<?php echo base_url(); ?>partsList">Parts list</a>
+						<a class="dropdown-item text-success disabled" href="<?php echo base_url(); ?>kitEditor">Kit editior</a>
 					</div>
 				</li>
 				<li class="nav-item">

@@ -11,6 +11,10 @@
 			<th scope="col">Req Phone</th>
 			<th scope="col">Req kits</th>
 			<th scope="col">Req Date</th>
+			<th scope="col">Out Date</th>
+			<th scope="col">In Date</th>
+
+
 		</tr>
 	</thead>
 	<tbody>
@@ -44,6 +48,12 @@
 			</td>
 			<td class="small">
 				<?php $timestamp = strtotime($request['ReqDate']); echo date('m/d/y', $timestamp);?>
+			</td>
+			<td class="small">
+				<?php $timestamp = strtotime($request['CheckedOutDate']); echo date('m/d/y', $timestamp);?>
+			</td>
+			<td class="small">
+				<?php $timestamp = strtotime($request['CheckedInDate']); echo date('m/d/y', $timestamp);?>
 			</td>
 			<?php endforeach; ?>
 		</tr>

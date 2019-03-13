@@ -17,7 +17,7 @@
 					<?php echo $requests; ?>
 				</p>
 			</div>
-		</div>
+</div>
 		<div class="card text-white bg-secondary col-6 col-md-4 ml-4 ">
 			<div class="card-header text-center text-info">
 				<h3>Checked Out:</h3>

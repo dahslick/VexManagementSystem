@@ -10,7 +10,7 @@
 			<th scope="col">Req Email</th>
 			<th scope="col">Req Phone</th>
 			<th scope="col">Req kits</th>
-			<th scope="col">Req Date</th>
+			<th scope="col">Out Date</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -43,7 +43,15 @@
 				<?php echo $request['ReqKits']; ?>
 			</td>
 			<td class="small">
-				<?php $timestamp = strtotime($request['ReqDate']); echo date('m/d/y', $timestamp);?>
+				<?php $timestamp = strtotime($request['CheckedOutDate']); echo date('m/d/y', $timestamp);?>
+			</td>
+			<td class='small'>
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<?php echo form_open('/checkedOut/checkin/'.$request['id']); ?>
+					<input type="submit" value="checkin" class="btn btn-outline-success"></form>
+					<?php echo form_open('/checkedOut/undo/'.$request['id']); ?>
+					<input type="submit" value="undo" class="btn btn-outline-danger"></form>
+				</div>
 			</td>
 			<?php endforeach; ?>
 		</tr>

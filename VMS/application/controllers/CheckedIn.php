@@ -3,7 +3,7 @@
         public function index(){
             $data['title'] = 'CheckedIn';
 
-            $data['requests'] = $this->request_model->get_CheckedIn();
+            $data['requests'] = $this->checkedIn_model->get_checkedIn();
             
             $this->load->view('templates/header');
             $this->load->view('checkedIn/index', $data);

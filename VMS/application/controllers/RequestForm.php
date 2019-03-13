@@ -19,7 +19,7 @@
                 $this->load->view('requestForm/index', $data);
                 $this->load->view('templates/footer');
             } else{
-                $this->request_model->create_request();
+                $this->newRequest_model->create_request();
                 
                 redirect('requestForm');
             }
