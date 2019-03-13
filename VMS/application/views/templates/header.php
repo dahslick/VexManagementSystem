@@ -32,7 +32,9 @@
 					 aria-haspopup="true" aria-expanded="false">Request</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>requestForm">New Request</a>
-						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>requests">Last Requested</a>
+						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>requests">Requested</a>
+						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>checkedOut">Checked Out</a>
+						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>checkedIn">Checked In</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown">

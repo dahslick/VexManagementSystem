@@ -10,6 +10,18 @@
             return $query->result_array();
         }
 
+        public function get_checkedOut(){
+            $this->db->order_by('ReqDate');
+            $query = $this->db->query('SELECT * FROM requests WHERE CheckedOut = 1 AND CheckedIn IS NULL');
+            return $query->result_array();
+        }
+
+        public function get_checkedIn(){
+            $this->db->order_by('ReqDate');
+            $query = $this->db->query('SELECT * FROM requests WHERE CheckedOut = 1 AND CheckedIn = 1');
+            return $query->result_array();
+        }
+
         public function create_request(){
             $data = array(
                 'OrgName' => $this->input->post('OrgName'),

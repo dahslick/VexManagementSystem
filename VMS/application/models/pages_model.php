@@ -10,7 +10,7 @@
             }
         
         public function countCheckedOut(){
-            $query = $this->db->query('SELECT * FROM requests WHERE CheckedOut = 1');
+            $query = $this->db->query('SELECT * FROM requests WHERE CheckedOut = 1 AND CheckedIn IS NULL');
             return $query->num_rows();
         }
      
