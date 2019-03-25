@@ -18,7 +18,7 @@
 		}
 	</style>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="<?php echo base_url(); ?>home">VMS</a>
+		<a class="navbar-brand" href="<?php echo base_url(); ?>quickLook">VMS</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
 		 aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
 					<a class="nav-link dropdown-toggle text-success" id="navbarDropdown" role="button" data-toggle="dropdown"
 					 aria-haspopup="true" aria-expanded="false">Parts</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item text-success disabled" href="<?php echo base_url(); ?>partsList">Parts list</a>
+						<a class="dropdown-item text-success" href="<?php echo base_url(); ?>partsList">Parts list</a>
 						<a class="dropdown-item text-success disabled" href="<?php echo base_url(); ?>kitEditor">Kit editior</a>
 					</div>
 				</li>

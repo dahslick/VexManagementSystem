@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-
+$route['partsList'] = 'partsList/index';
 $route['requests'] = 'requests/index';
 $route['checkedOut'] = 'checkedOut/index';
 $route['checkedIn'] = 'checkedIn/index';

@@ -55,6 +55,12 @@
 			<td class="small">
 				<?php $timestamp = strtotime($request['CheckedInDate']); echo date('m/d/y', $timestamp);?>
 			</td>
+			<td class='small'>
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<?php echo form_open('/checkedIn/undo/'.$request['id']); ?>
+					<input type="submit" value="undo" class="btn btn-outline-danger"></form>
+				</div>
+			</td>
 			<?php endforeach; ?>
 		</tr>
 	</tbody>

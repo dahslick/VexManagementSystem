@@ -9,4 +9,9 @@
             $this->load->view('checkedIn/index', $data);
             $this->load->view('templates/footer');
         }  
+
+        public function undo($id){
+            $this->checkedIn_model->undo_row($id);
+            redirect('checkedIn');
+        }
         }
