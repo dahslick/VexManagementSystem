@@ -20,7 +20,6 @@
                 $this->load->view('templates/footer');
             } else{
                 $this->newRequest_model->create_request();
-                
                 redirect('requestForm');
             }
 

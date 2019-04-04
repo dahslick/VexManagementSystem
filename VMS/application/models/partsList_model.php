@@ -5,7 +5,8 @@
         }
 
         public function get_parts(){
-            $query = $this->db->query('SELECT * FROM parts');
+            $this->db->query('Select name, cost, spc, amountInOrder, count(spc) as totalCount FROM parts GROUP BY spc');
+            $query = $this->db->get('parts');
             return $query->result_array();
         }
 
@@ -15,8 +16,7 @@
                 'name' => $this->input->post('name'),
                 'cost' => $this->input->post('cost'),
                 'amountInOrder' => $this->input->post('amountInOrder')
-            );
-            
+            );            
             return $this->db->insert('parts',$data);
         }
-    }
+}
