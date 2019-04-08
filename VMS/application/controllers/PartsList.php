@@ -20,7 +20,17 @@
                 redirect('partsList');
             }
         }
-    }
+        
+            public function remove_one($spc){
+                $this->partsList_model->delete_one($spc);
+                redirect('partsList');
+            }
+
+            public function add_one($id){
+                $this->partsList_model->increment_one($id);
+                redirect('partsList');
+            }
+        }
             
             
 

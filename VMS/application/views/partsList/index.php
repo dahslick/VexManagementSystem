@@ -19,7 +19,7 @@
 
 
 <div class="table-responsive">
-<table class="table table-hover table-condensed table-striped table-bordered mt-4">
+<table class="table table-hover table-condensed table-striped mt-4">
 	<thead>
 		<tr>
 			<th scope="col" class="text-center">Prod Name</th>
@@ -46,7 +46,15 @@
             </td>
             <td class="small text-center">
 				<?php echo $part['cost']; ?>
-            </td> 
+				</td>
+				<td class="small">
+				<div class="btn-group" data-toggle="buttons">
+					<?php echo form_open('/partsList/remove_one/'.$part['spc']); ?>
+					<input type="submit" value = "-" class="btn btn-outline-danger m-1"></form>
+					<?php echo form_open('/partsList/add_one/'.$part['id']); ?>
+					<input type="submit" value = "+" class="btn btn-outline-success m-1"></form>
+				</div>
+			</td> 
 			<?php endforeach; ?>
         </tr>
 	</tbody>
