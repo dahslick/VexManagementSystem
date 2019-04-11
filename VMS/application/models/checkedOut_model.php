@@ -5,7 +5,7 @@
         }
 
         public function get_checkedOut(){
-            $query = $this->db->query('SELECT * FROM requests WHERE CheckedOut = 1 AND CheckedIn IS NULL ORDER BY CheckedOutDate DESC');
+            $query = $this->db->query('SELECT * FROM requests WHERE CheckedOut = 1 AND CheckedIn IS NULL ORDER BY CheckedOutDate desc');
             return $query->result_array();
         }
 

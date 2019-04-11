@@ -5,7 +5,7 @@
         }
 
         public function get_checkedIn(){
-            $query = $this->db->query('SELECT * FROM requests WHERE CheckedOut = 1 AND CheckedIn = 1 ORDER BY checkedInDate');
+            $query = $this->db->query('SELECT * FROM requests WHERE CheckedOut = 1 AND CheckedIn = 1 ORDER BY checkedInDate DESC');
             return $query->result_array();
         }
 
